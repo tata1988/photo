@@ -123,3 +123,43 @@
       color: var(--text-main);
       text-decoration: underline;
   }
+
+  /* шапка */
+
+  .header {
+
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+  }
+
+  /* слайдер */
+  .swiper {
+      width: 900px;
+      height: 500px;
+  }
+
+  .swiper-slide {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      /*       text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+     
+      
+       */
+  }
