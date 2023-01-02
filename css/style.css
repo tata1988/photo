@@ -158,8 +158,31 @@
       /*       text-align: center;
       font-size: 18px;
       background: #fff;
-
-     
-      
        */
+  }
+
+  /* about */
+  .about {
+      padding-top: 30px;
+  }
+
+  .about__title {
+      text-align: center;
+      font-size: 36px;
+  }
+
+  .about__wrapper {
+      display: flex;
+      gap: 20px;
+  }
+
+  .about__text {
+      padding: 10px;
+      font-size: 20px;
+      line-height: 26px;
+      width: 49%;
+  }
+
+  .about__img {
+      width: 49%;
   }
