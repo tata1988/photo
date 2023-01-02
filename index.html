@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
     <title>Фотограф Ольга Костяника</title>
 </head>
 <body>
     <!-- Меню -->
-    <div class="menu">
+    <nav class="menu__desktop">
 		<div class="container">
 			<div class="row">
 				<div class="logo">
@@ -19,7 +20,7 @@
 						<img src="images/logo.png" alt="логотип">
 					</a>
 				</div>
-				<ul>
+				<ul class="menu">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about.html">О себе</a></li>
 					<li><a href="portfolio.html">Портфолио</a></li>
@@ -32,12 +33,29 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</nav>
+
+    <nav class="menu__mobile">
+		<div class="container">
+                <div class="menu__inner">
+                    <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
+                    <div class="menu__burger"><span>toggle menu</span></div>
+                 </div>
+				<ul class="menu">
+					<li class="menu__item"><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О себе</a></li>
+					<li><a href="portfolio.html">Портфолио</a></li>
+					<li><a href="price.html">Прайс</a></li>
+					<li><a href="information.html">Полезная информация</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+
+		</div>
+	</nav>
 
     <!-- Шапка -->
 	<div class="header">
 		<div class="container">
-            <!-- Swiper -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -57,9 +75,7 @@
                         </div>
                     
                 </div>
-                <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
@@ -71,16 +87,19 @@
         <div class="container">
             <h1 class="about__title">Фотограф Ольга Костяника</h1>
             <div class="about__wrapper">
-                <img src="images/about.jpg" alt="about" class="about__img">
-                <div class="about__text">
+                <div class="about__img col-6 col-lg-12 col-sm-12">
+                    <img src="images/about.jpg" alt="about">
+                </div>
+                
+                <div class="about__text col-6 col-lg-12 col-sm-12">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ea accusamus voluptatem, minima dolor optio itaque repellat nostrum sed! Autem perspiciatis voluptatem saepe ratione exercitationem ipsa tempore ullam officiis at.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur neque reprehenderit porro minus voluptatem aspernatur saepe, ullam tempora omnis esse ipsa in! In quia deserunt, modi blanditiis illo quo?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur neque reprehenderit porro minus voluptatem aspernatur saepe, ullam tempora omnis esse ipsa in! In quia deserunt, modi blanditiis illo quo?</p>
+
                 </div>
                 
             </div>
         </div>
     </section>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
