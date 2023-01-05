@@ -211,6 +211,11 @@
       max-height: 600px;
   }
 
+  .twentytwenty__container {
+      height: 400px;
+      max-width: 400px;
+  }
+
   /* Адаптивная версия */
   /* lg */
   @media screen and (max-width: 1025px) {
@@ -367,13 +372,9 @@
           max-height: 300px;
       }
 
-      .twentytwenty__container {
-          max-height: 640px;
-          max-width: 640px;
-      }
-
       .twentytwenty__title {
-          margin: 0 auto;
+          margin-bottom: 10px;
+          font-size: 18px;
       }
 
   }

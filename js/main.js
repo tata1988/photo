@@ -20,6 +20,7 @@ $(document).ready(function () {
 
     //инициализация плагина twentytwenty jQuery
     $("#box").twentytwenty({
+        default_offset_pct: 0.7,
         before_label: 'ДО',
         after_label: 'ПОСЛЕ',
     });
