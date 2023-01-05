@@ -211,6 +211,10 @@
       max-height: 600px;
   }
 
+  .twentytwenty {
+      padding: 10px;
+  }
+
   .twentytwenty__container {
       height: 400px;
       max-width: 400px;
