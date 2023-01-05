@@ -367,4 +367,13 @@
           max-height: 300px;
       }
 
+      .twentytwenty__container {
+          max-height: 640px;
+          max-width: 640px;
+      }
+
+      .twentytwenty__title {
+          margin: 0 auto;
+      }
+
   }

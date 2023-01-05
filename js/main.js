@@ -11,13 +11,19 @@ $(document).ready(function () {
         $('.menu__burger').toggleClass('close');
         return false;
     });
+
     /* Мобильное меню */
     $('.menu__burger').click(function () {
         $('.menu__mobile .menu').toggle(500);
         $(this).toggleClass('close');
     });
 
-    
+    //инициализация плагина twentytwenty jQuery
+    $("#box").twentytwenty({
+        before_label: 'ДО',
+        after_label: 'ПОСЛЕ',
+    });
+
 });
 
 
@@ -39,3 +45,7 @@ let swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+
+
+
