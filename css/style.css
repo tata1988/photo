@@ -374,7 +374,7 @@
   }
 
   /* sm */
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 560px) {
       .container {
           width: 375px;
           padding: 0 10px;
