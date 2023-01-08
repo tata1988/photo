@@ -374,6 +374,34 @@
       line-height: 26px;
   }
 
+  /* портфолио */
+  .portfolio__wrapper {
+      padding: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+  }
+
+  .portfolio__item {
+      max-width: 300px;
+  }
+
+  .portfolio__link {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .portfolio__title {
+      text-align: center;
+      font-size: 18px;
+  }
+
+  .portfolio__price {
+      text-align: end;
+  }
+
   /* Список фото */
   .list {
       padding: 50px 0;
