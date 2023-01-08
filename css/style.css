@@ -333,8 +333,6 @@
       opacity: 0.7;
   }
 
-
-
   /* Резюме*/
   .resume {
       padding: 40px 0;
@@ -374,6 +372,29 @@
 
   .resume-cards p {
       line-height: 26px;
+  }
+
+  /* Список фото */
+  .list {
+      padding: 50px 0;
+  }
+
+  .list .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  .list .gallery a {
+      border: 5px solid var(--text-light);
+      display: block;
+      margin-bottom: 10px;
+      transition: 0.3s;
+  }
+
+  .list .gallery a img {
+      max-height: 300px;
+      max-width: 500px;
   }
 
 
