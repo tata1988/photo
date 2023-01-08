@@ -75,8 +75,9 @@
   /* Сетка */
   .container {
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1230px;
       width: 100%;
+      padding: 0 15px;
   }
 
   .row {
@@ -113,14 +114,10 @@
   }
 
   .header {
-      padding: 15px 0;
+      padding: 60px 0 15px 0;
   }
 
   /* Меню */
-  .menu__desktop {
-      padding: 15px 0;
-  }
-
   .menu__desktop .row>ul>li {
       position: relative;
   }
@@ -279,7 +276,7 @@
   /* обратная связь  */
 
   .feedback__wrapper {
-      padding: 20px 0;
+      padding: 15px 0 30px 0;
       display: block;
       margin: 0 auto;
       max-width: 600px;
@@ -329,10 +326,22 @@
 
 
   /* Адаптивная версия */
+  @media screen and (max-width: 1200px) {
+      .menu {
+          padding: 0 10px;
+      }
+
+      .contacts {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+  }
+
   /* lg */
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1044px) {
       .container {
-          max-width: 900px;
+          padding: 0 20px;
       }
 
       .col-lg-4 {
@@ -347,41 +356,30 @@
           width: 100%;
       }
 
+      .contacts {
+          margin-top: 7px;
+      }
+  }
+
+  @media screen and (max-width: 920px) {
       .menu {
           flex-direction: column;
-          padding-left: 10px;
+      }
+
+      .row {
+          align-items: flex-start;
       }
 
       .contacts {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
+          margin-top: 0;
       }
   }
 
   /* md */
-  @media screen and (max-width: 825px) {
-      .container {
-          max-width: 540px;
-      }
+  @media screen and (max-width: 768px) {
 
-      .contacts {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-      }
-
-  }
-
-  /* sm */
-  @media screen and (max-width: 560px) {
-      .container {
-          width: 375px;
-          padding: 0 10px;
-      }
-
-      .col-sm-12 {
-          width: 100%;
+      .header {
+          padding: 30px 0 15px 0;
       }
 
       .menu__desktop {
@@ -394,10 +392,9 @@
       }
 
       .menu__inner {
-          padding: 10px 0;
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: start;
       }
 
       .menu {
@@ -476,6 +473,32 @@
           transform: rotate(-45deg);
       }
 
+      .contacts {
+          font-size: 16px;
+          gap: 7px;
+      }
+
+      .feedback__wrapper {
+          padding: 10px 0 20px 0;
+      }
+
+
+  }
+
+  /* sm */
+  @media screen and (max-width: 560px) {
+      .container {
+          padding: 0 10px;
+      }
+
+      .col-sm-12 {
+          width: 100%;
+      }
+
+      .menu__mobile .contacts {
+          display: none;
+      }
+
       .title {
           font-size: 18px;
           text-align: center;
@@ -512,6 +535,10 @@
           display: flex;
           flex-direction: column;
           gap: 10px;
+      }
+
+      .feedback__wrapper {
+          padding: 10px 0 20px 0;
       }
 
   }
