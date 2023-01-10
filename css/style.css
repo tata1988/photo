@@ -439,6 +439,7 @@
 
   .list .gallery a img {
       max-height: 300px;
+      width: 250px;
 
   }
 
@@ -473,6 +474,9 @@
       max-height: 300px;
   }
 
+  .information {
+      padding: 30px 0;
+  }
 
   /* Адаптивная версия */
   @media screen and (max-width: 1200px) {
