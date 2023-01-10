@@ -103,12 +103,17 @@
       width: 33.33%;
   }
 
+
   .col-6 {
       width: 49%;
   }
 
+  .col-7 {
+      width: 60%;
+  }
+
   .col-9 {
-      width: 73%;
+      width: 70%;
   }
 
   .col-12 {
@@ -433,13 +438,13 @@
   .price__wrapper {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 30px;
   }
 
   .price__item {
       display: flex;
-      justify-content: flex-start;
-      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: start;
   }
 
@@ -448,7 +453,7 @@
   }
 
   .price__text {
-      font-size: 18px;
+      font-size: 16px;
   }
 
   .price__img {
