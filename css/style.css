@@ -121,8 +121,12 @@
   }
 
   .logo img {
-      max-width: 140px;
+      max-width: 136px;
       max-height: 50px;
+  }
+
+  .logo a {
+      line-height: 0;
   }
 
   .header {
@@ -518,10 +522,6 @@
   /* md */
   @media screen and (max-width: 768px) {
 
-      .header {
-          padding: 30px 0 15px 0;
-      }
-
       .menu__desktop {
           display: none;
       }
@@ -529,6 +529,7 @@
       .menu__mobile {
           display: flex;
           flex-direction: column;
+          padding: 10px 0;
       }
 
       .menu__inner {
