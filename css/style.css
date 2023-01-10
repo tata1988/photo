@@ -134,6 +134,7 @@
       background-color: rgb(229, 145, 145);
       z-index: 1000;
       position: sticky;
+      box-shadow: 0px 1px 9px rgb(0, 0, 0, .2);
 
   }
 
@@ -286,7 +287,7 @@
   }
 
   .twentytwenty {
-      padding: 20px 0;
+      padding: 10px 0;
   }
 
   .twentytwenty__container {
@@ -296,8 +297,12 @@
   }
 
   /* обратная связь  */
+  .feedback {
+      padding: 60px 0 30px 0;
+  }
+
   .feedback__wrapper {
-      padding: 15px 0 30px 0;
+
       display: block;
       margin: 0 auto;
       max-width: 600px;
@@ -522,6 +527,12 @@
   /* md */
   @media screen and (max-width: 768px) {
 
+      .title {
+          font-size: 24px;
+          text-align: center;
+          margin-bottom: 10px;
+      }
+
       .menu__desktop {
           display: none;
       }
@@ -691,8 +702,13 @@
           gap: 10px;
       }
 
-      .feedback__wrapper {
-          padding: 10px 0 20px 0;
+      .feedback {
+          padding: 30px 0 30px 0;
+      }
+
+      .feedback__form-title {
+          margin: 10px 0;
+          font-size: 16px;
       }
 
   }
