@@ -438,9 +438,14 @@
   }
 
   .list .gallery a img {
-      max-height: 300px;
-      width: 250px;
+      height: 300px;
 
+
+  }
+
+  .gallery-item {
+      width: 200px;
+      padding: 5px;
   }
 
   /* Прайс */
