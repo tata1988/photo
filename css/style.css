@@ -283,7 +283,6 @@
   }
 
   /* обратная связь  */
-
   .feedback__wrapper {
       padding: 15px 0 30px 0;
       display: block;
@@ -334,7 +333,7 @@
   }
 
   /* Резюме*/
-  .resume {
+  /*   .resume {
       padding: 40px 0;
       font-size: 20px;
       display: flex;
@@ -372,7 +371,7 @@
 
   .resume-cards p {
       line-height: 26px;
-  }
+  } */
 
   /* портфолио */
   .portfolio__wrapper {
@@ -384,7 +383,7 @@
   }
 
   .portfolio__item {
-      max-width: 300px;
+      max-width: 250px;
   }
 
   .portfolio__link {
@@ -404,25 +403,56 @@
 
   /* Список фото */
   .list {
-      padding: 50px 0;
+      padding: 40px 0;
   }
 
   .list .gallery {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 5px;
   }
 
   .list .gallery a {
-      border: 5px solid var(--text-light);
+      /* border: 5px solid var(--text-light); */
       display: block;
-      margin-bottom: 10px;
       transition: 0.3s;
   }
 
   .list .gallery a img {
       max-height: 300px;
-      max-width: 500px;
+
+  }
+
+  /* Прайс */
+
+  .price {
+      padding: 40px 0;
+  }
+
+  .price__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .price__item {
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+      align-items: start;
+  }
+
+  .price__title {
+      margin-bottom: 10px;
+  }
+
+  .price__text {
+      font-size: 18px;
+  }
+
+  .price__img {
+      max-height: 300px;
   }
 
 
