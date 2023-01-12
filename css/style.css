@@ -4,7 +4,7 @@
       --text-light: #fff;
       --text-accent: #297d83;
       --text-danger: #f00;
-      --text-small: rgb(192, 75, 75);
+      --text-small: #c04b4b;
   }
 
   /* Общие */
@@ -439,13 +439,65 @@
 
   .list .gallery a img {
       max-height: 300px;
-
-
   }
 
-  .gallery-item {
-      width: 200px;
-      padding: 5px;
+  .gzoomIn {
+      animation: gzoomIn .5s ease;
+  }
+
+  @keyframes gzoomIn {
+      from {
+          opacity: 0;
+          transform: scale3d(.3, .3, .3);
+      }
+
+      to {
+          opacity: 1;
+      }
+  }
+
+
+  .gbounceIn {
+      animation: bounceIn 1.3s ease;
+  }
+
+  @keyframes bounceIn {
+
+      from,
+      20%,
+      40%,
+      60%,
+      80%,
+      to {
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+
+      0% {
+          opacity: 0;
+          transform: scale3d(0.3, 0.3, 0.3);
+      }
+
+      20% {
+          transform: scale3d(1.1, 1.1, 1.1);
+      }
+
+      40% {
+          transform: scale3d(0.9, 0.9, 0.9);
+      }
+
+      60% {
+          opacity: 1;
+          transform: scale3d(1.03, 1.03, 1.03);
+      }
+
+      80% {
+          transform: scale3d(0.97, 0.97, 0.97);
+      }
+
+      to {
+          opacity: 1;
+          transform: scale3d(1, 1, 1);
+      }
   }
 
   /* Прайс */
