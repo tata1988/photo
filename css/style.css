@@ -131,7 +131,7 @@
 
   .header {
       top: 0;
-      background-color: rgb(229, 145, 145);
+      background-color: #e59191;
       z-index: 1000;
       position: sticky;
       box-shadow: 0px 1px 9px rgb(0, 0, 0, .2);
@@ -396,18 +396,27 @@
       padding: 30px 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       gap: 20px;
   }
 
   .portfolio__item {
-      max-width: 250px;
+      max-width: 500px;
   }
 
   .portfolio__link {
       display: flex;
       flex-direction: column;
       gap: 10px;
+  }
+
+  .portfolio__link img:hover {
+      border: 2px solid #e7a895;
+      outline: 2px dashed #f5f1f0;
+      /* Ширина, вид и цвет рамки */
+      outline-offset: -10px;
+      /* Выводим рамку внутри элемента */
+      transition: 0.2s;
   }
 
   .portfolio__title {
@@ -417,6 +426,82 @@
 
   .portfolio__price {
       text-align: end;
+  }
+
+  /* Анимация для портфолио */
+
+  .hover-effect-btn {
+      position: relative;
+      max-width: 900px;
+      width: 100%;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      /* Настройка цвета и прозрачности для блока с заголовком */
+      transition: background 0.5s ease;
+  }
+
+  .hover-effect-btn:hover .overlay {
+      display: block;
+      background: rgba(0, 0, 0, 0.9);
+      /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+  }
+
+  .portfolio__description {
+      position: absolute;
+      padding: 0 15px;
+      width: 100%;
+      left: 0;
+      top: 20%;
+      /* Отступ сверху */
+      font-size: 1.100em;
+      /* Размер текста заголовка */
+      text-align: center;
+      text-transform: uppercase;
+      /* Заглавные буквы */
+      color: white;
+      /* Цвет заголовка */
+      z-index: 1;
+      transition: top .5s ease;
+  }
+
+  .hover-effect-btn:hover .portfolio__description {
+      top: 10%;
+      /* Отступ сверху при наведении */
+  }
+
+  .button {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 65%;
+      /* Отступ сверху */
+      text-align: center;
+      opacity: 0;
+      transition: opacity .35s ease;
+  }
+
+  .button a {
+      padding: 15px 40px;
+      /* Отступ */
+      text-align: center;
+      background: #e59191;
+      /* Цвет кнопки */
+      color: white;
+      /* Цвет текста */
+      border: 1px solid white;
+      /* Ширина, стиль и цвет границы */
+      z-index: 1;
+  }
+
+  .hover-effect-btn:hover .button {
+      opacity: 1;
   }
 
   /* Список фото */
@@ -441,64 +526,27 @@
       max-height: 300px;
   }
 
-  .gzoomIn {
-      animation: gzoomIn .5s ease;
+  /* Анимация для галереи фото */
+
+  .hover-image-scale {
+      display: inline-block;
+      overflow: hidden;
+      /* Скрываем всё за контуром */
   }
 
-  @keyframes gzoomIn {
-      from {
-          opacity: 0;
-          transform: scale3d(.3, .3, .3);
-      }
+  .hover-image-scale img {
+      transition: 1s;
+      /* Время эффекта */
+      display: block;
+  }
 
-      to {
-          opacity: 1;
-      }
+  .hover-image-scale img:hover {
+      transform: scale(1.1);
+      /* Увеличиваем масштаб */
   }
 
 
-  .gbounceIn {
-      animation: bounceIn 1.3s ease;
-  }
 
-  @keyframes bounceIn {
-
-      from,
-      20%,
-      40%,
-      60%,
-      80%,
-      to {
-          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      }
-
-      0% {
-          opacity: 0;
-          transform: scale3d(0.3, 0.3, 0.3);
-      }
-
-      20% {
-          transform: scale3d(1.1, 1.1, 1.1);
-      }
-
-      40% {
-          transform: scale3d(0.9, 0.9, 0.9);
-      }
-
-      60% {
-          opacity: 1;
-          transform: scale3d(1.03, 1.03, 1.03);
-      }
-
-      80% {
-          transform: scale3d(0.97, 0.97, 0.97);
-      }
-
-      to {
-          opacity: 1;
-          transform: scale3d(1, 1, 1);
-      }
-  }
 
   /* Прайс */
 
@@ -710,6 +758,10 @@
           padding: 10px 0 20px 0;
       }
 
+      .portfolio__description {
+          font-size: 14px;
+      }
+
 
   }
 
@@ -770,6 +822,10 @@
       .feedback__form-title {
           margin: 10px 0;
           font-size: 16px;
+      }
+
+      .portfolio__text {
+          display: none;
       }
 
   }
