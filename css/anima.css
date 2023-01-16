@@ -50,20 +50,8 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1140px) {
-    .cb-slideshow li div h3 {
-        font-size: 140px
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .cb-slideshow li div h3 {
-        font-size: 80px
-    }
-}
-
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(../images/landscape/ural-bali.jpg)
+    background-image: url(/images/landscape/ural-bali.jpg)
 }
 
 .cb-slideshow li:nth-child(2) span {
