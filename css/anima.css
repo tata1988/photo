@@ -67,22 +67,22 @@
 }
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(/images/horses/1.jpg);
+    background-image: url(../images/horses/1.jpg);
     animation-delay: 6s;
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(/images/portrait/1.jpg);
+    background-image: url(../images/portrait/1.jpg);
     animation-delay: 12s;
 }
 
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(/images/family/1.jpg);
+    background-image: url(../images/family/1.jpg);
     animation-delay: 18s;
 }
 
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(/images/dark/2.jpg);
+    background-image: url(../images/dark/2.jpg);
     animation-delay: 24s;
 }
 
