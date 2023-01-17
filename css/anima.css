@@ -1,7 +1,7 @@
 .cb-slideshow {
+
     width: 100%;
     height: calc(100vh - 110px);
-    top: 0px;
     left: 0px;
     z-index: 0;
 }
@@ -51,32 +51,37 @@
 }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(../images/landscape/ural-bali.jpg);
+    background-image: url(../images/portrait/1.jpg);
 }
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(../images/horses/1.jpg);
+    background-image: url(../images/slider/1.jpg);
     animation-delay: 6s;
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../images/portrait/1.jpg);
+    background-image: url(../images/slider/2.jpg);
     animation-delay: 12s;
 }
 
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(../images/family/1.jpg);
+    background-image: url(../images/slider/3.jpg);
     animation-delay: 18s;
 }
 
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../images/dark/2.jpg);
+    background-image: url(../images/slider/4.jpg);
     animation-delay: 24s;
 }
 
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(../images/horses/1.jpg);
+    background-image: url(../images/slider/5.jpg);
     animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(7) span {
+    background-image: url(../images/slider/6.jpg);
+    animation-delay: 36s;
 }
 
 .cb-slideshow li:nth-child(2) div {
@@ -97,4 +102,8 @@
 
 .cb-slideshow li:nth-child(6) div {
     animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(7) div {
+    animation-delay: 36s;
 }
