@@ -62,8 +62,6 @@
       margin: 0;
   }
 
-
-
   .visually-hidden {
       position: fixed;
       transform: scale(0);
@@ -84,7 +82,6 @@
 
   /* Сетка */
   .container {
-      position: relative;
       margin: 0 auto;
       max-width: 1230px;
       width: 100%;
@@ -273,6 +270,10 @@
   /* о себе*/
   .about {
       padding-top: 30px;
+  }
+
+  .about-title {
+      display: none;
   }
 
   .about__title {
@@ -769,6 +770,10 @@
 
       .contacts__link:hover {
           color: var(--text-accent);
+      }
+
+      .about-title {
+          display: block;
       }
 
       .feedback__wrapper {
