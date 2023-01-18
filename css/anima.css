@@ -59,47 +59,47 @@
 
 .cb-slideshow li:nth-child(2) span {
     background-image: url(../images/slider/1.jpg);
-    animation-delay: 6s;
+    animation-delay: 5s;
 }
 
 .cb-slideshow li:nth-child(3) span {
     background-image: url(../images/slider/2.jpg);
-    animation-delay: 12s;
+    animation-delay: 10s;
 }
 
 .cb-slideshow li:nth-child(4) span {
     background-image: url(../images/slider/3.jpg);
-    animation-delay: 18s;
+    animation-delay: 15s;
 }
 
 .cb-slideshow li:nth-child(5) span {
     background-image: url(../images/slider/4.jpg);
-    animation-delay: 24s;
+    animation-delay: 20s;
 }
 
 .cb-slideshow li:nth-child(6) span {
     background-image: url(../images/slider/5.jpg);
-    animation-delay: 30s;
+    animation-delay: 25s;
 }
 
 .cb-slideshow li:nth-child(2) div {
-    animation-delay: 6s;
+    animation-delay: 5s;
 }
 
 .cb-slideshow li:nth-child(3) div {
-    animation-delay: 12s;
+    animation-delay: 10s;
 }
 
 .cb-slideshow li:nth-child(4) div {
-    animation-delay: 18s;
+    animation-delay: 15s;
 }
 
 .cb-slideshow li:nth-child(5) div {
-    animation-delay: 24s;
+    animation-delay: 20s;
 }
 
 .cb-slideshow li:nth-child(6) div {
-    animation-delay: 30s;
+    animation-delay: 25s;
 }
 
 
