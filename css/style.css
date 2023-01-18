@@ -4,7 +4,7 @@
       --text-light: #fff;
       --text-accent: #297d83;
       --text-danger: #f00;
-      --text-small: #e7a895;
+      --bg: #e7a895;
   }
 
   /* Общие */
@@ -84,6 +84,7 @@
 
   /* Сетка */
   .container {
+    position: relative;
       margin: 0 auto;
       max-width: 1230px;
       width: 100%;
@@ -141,14 +142,14 @@
 
   .header {
       padding: 20px 0;
-      background-color: var(--text-small);
+      background-color: var(--bg);
       top: 0;
       z-index: 1000;
       position: sticky;
   }
 
   /*   .header__active {
-      background: var(--text-small);
+      background: var(--bg);
   }
  */
 
@@ -219,7 +220,7 @@
   }
 
   .contacts__phone a:hover {
-      color: var(--text-small);
+      color: var(--bg);
       text-decoration: underline;
   }
 
@@ -234,7 +235,7 @@
   }
 
   .contacts__link:hover {
-      color: var(--text-small);
+      color: var(--bg);
   }
 
   /* слайдер */
@@ -263,6 +264,10 @@
       font-size: 18px;
       background: #fff;
        */
+  }
+
+  .swiper-slider {
+    display: none;
   }
 
   /* о себе*/
@@ -358,7 +363,7 @@
 
   .feedback__btn:hover {
       translate: 0.3s;
-      color: var(--text-small);
+      color: var(--bg);
       opacity: 0.7;
   }
 
@@ -655,7 +660,6 @@
       .title {
           font-size: 24px;
           text-align: center;
-          margin-bottom: 10px;
       }
 
       .menu__desktop {
@@ -698,7 +702,7 @@
           width: 40px;
           height: 40px;
           font-size: 0;
-          background-color: var(--text-small);
+          background-color: var(--bg);
           border-radius: 5px;
           position: relative;
       }
@@ -774,6 +778,11 @@
       .portfolio__description {
           font-size: 14px;
       }
+
+      .swiper-slider {
+        display: block;
+      }
+    
   }
 
   /* sm */
@@ -787,9 +796,7 @@
       }
 
       .title {
-          font-size: 18px;
           text-align: center;
-          margin-bottom: 10px;
       }
 
       .about {

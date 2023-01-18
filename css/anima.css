@@ -82,11 +82,6 @@
     animation-delay: 30s;
 }
 
-.cb-slideshow li:nth-child(7) span {
-    background-image: url(../images/slider/6.jpg);
-    animation-delay: 36s;
-}
-
 .cb-slideshow li:nth-child(2) div {
     animation-delay: 6s;
 }
@@ -107,6 +102,11 @@
     animation-delay: 30s;
 }
 
-.cb-slideshow li:nth-child(7) div {
-    animation-delay: 36s;
+
+
+@media screen and (max-width: 768px) {
+    .cb-slideshow {
+        height: calc(100vh - 130px);
+    }
+
 }
