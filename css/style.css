@@ -84,7 +84,7 @@
 
   /* Сетка */
   .container {
-    position: relative;
+      position: relative;
       margin: 0 auto;
       max-width: 1230px;
       width: 100%;
@@ -267,7 +267,7 @@
   }
 
   .swiper-slider {
-    display: none;
+      display: none;
   }
 
   /* о себе*/
@@ -771,6 +771,10 @@
           color: var(--text-accent);
       }
 
+      .feedback {
+          height: calc(100vh - 130px);
+      }
+
       .feedback__wrapper {
           padding: 10px 0 20px 0;
       }
@@ -780,9 +784,11 @@
       }
 
       .swiper-slider {
-        display: block;
+          display: block;
       }
-    
+
+
+
   }
 
   /* sm */
