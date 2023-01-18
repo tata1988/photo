@@ -1,7 +1,10 @@
-.cb-slideshow {
+.main {
+    position: relative;
+}
 
+.cb-slideshow {
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 90px);
     left: 0px;
     z-index: 0;
 }

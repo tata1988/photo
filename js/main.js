@@ -1,3 +1,8 @@
+// смена цвета header при прокрутке
+/* $(window).on("scroll", function () {
+    $('.header').toggleClass("header__active", $(this).scrollTop() > $(window).height());
+}); */
+
 $(document).ready(function () {
     /* Плавная прокрутка меню */
     $('.header a[href^="#"]').click(function () {
@@ -24,7 +29,6 @@ $(document).ready(function () {
         before_label: 'ДО',
         after_label: 'ПОСЛЕ',
     });
-
 });
 
 
@@ -46,6 +50,7 @@ let swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
 
 
 
