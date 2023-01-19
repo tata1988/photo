@@ -83,9 +83,8 @@
   /* Сетка */
   .container {
       margin: 0 auto;
-      max-width: 1230px;
+      max-width: 1200px;
       width: 100%;
-      padding: 0 15px;
   }
 
   .row {
@@ -133,7 +132,7 @@
   }
 
   .logo:hover {
-      opacity: 0.8;
+      opacity: 0.3;
       transition: all 0.5s ease;
   }
 
@@ -294,7 +293,7 @@
   }
 
   .about__text {
-      padding: 10px;
+      padding: 10px 15px;
       font-size: 20px;
       line-height: 26px;
   }
@@ -566,7 +565,7 @@
   /* Прайс */
 
   .price {
-      padding: 40px 0;
+      padding: 40px 15px;
   }
 
   .price__wrapper {
@@ -595,7 +594,7 @@
   }
 
   .information {
-      padding: 30px 0;
+      padding: 30px 15px;
   }
 
   .footer {
@@ -617,10 +616,6 @@
 
   /* lg */
   @media screen and (max-width: 1044px) {
-      .container {
-          padding: 0 20px;
-      }
-
       .col-lg-4 {
           width: 33.33%;
       }
@@ -654,8 +649,9 @@
 
   /* md */
   @media screen and (max-width: 768px) {
+
       .header {
-          padding: 10px 0;
+          padding: 10px;
       }
 
       .title {
@@ -776,6 +772,11 @@
           display: block;
       }
 
+      .about__img img {
+          display: block;
+          margin: 0 auto;
+      }
+
       .feedback__wrapper {
           padding: 10px 0 20px 0;
       }
@@ -788,15 +789,15 @@
           display: block;
       }
 
+      .price {
+          padding: 20px 15px;
+      }
 
 
   }
 
   /* sm */
   @media screen and (max-width: 560px) {
-      .container {
-          padding: 0 10px;
-      }
 
       .col-sm-12 {
           width: 100%;
@@ -828,11 +829,6 @@
           max-height: 300px;
       }
 
-      .twentytwenty__title {
-          margin-bottom: 10px;
-          font-size: 18px;
-      }
-
       .contacts {
           display: flex;
           flex-direction: column;
@@ -840,7 +836,7 @@
       }
 
       .feedback {
-          padding: 30px 0 30px 0;
+          padding: 30px 10px;
           height: calc(100vh - 75px);
       }
 

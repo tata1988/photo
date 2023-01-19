@@ -1,5 +1,7 @@
 .main-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .cb-slideshow {
@@ -24,22 +26,6 @@
     animation: imageAnimation 30s linear infinite 0s;
 }
 
-.cb-slideshow li div {
-    z-index: 1000;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 30s linear infinite 0s;
-}
-
-.cb-slideshow li div h3 {
-    font-size: 80px;
-    padding: 0px;
-}
 
 @keyframes imageAnimation {
     0% {
@@ -64,29 +50,6 @@
         opacity: 0
     }
 }
-
-@keyframes titleAnimation {
-    0% {
-        opacity: 0
-    }
-
-    8% {
-        opacity: 1
-    }
-
-    17% {
-        opacity: 1
-    }
-
-    19% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 0
-    }
-}
-
 
 .no-cssanimations .cb-slideshow li span {
     opacity: 1;
@@ -141,23 +104,43 @@
     animation-delay: 25s;
 }
 
-
+.main__button {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     .cb-slideshow {
         height: calc(100vh - 130px);
     }
 
-}
-
-@media screen and (max-width: 1140px) {
-    .cb-slideshow li div h3 {
-        font-size: 60px
+    .main__button {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 15%;
+        /* Отступ сверху */
+        text-align: center;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .cb-slideshow li div h3 {
-        display: none;
+    .main__button a {
+        padding: 5px 20px;
+        font-size: 22px;
+        font-weight: 700;
+        /* Отступ */
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        /* Цвет кнопки */
+        color: white;
+        /* Цвет текста */
+        border: 1px solid white;
+        /* Ширина, стиль и цвет границы */
+        z-index: 1;
+        opacity: 0.8;
+        transition: opacity .3s ease;
     }
+
+    .main__button a:hover {
+        background-color: var(--bg)
+    }
+
 }
