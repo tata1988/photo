@@ -29,6 +29,13 @@ $(document).ready(function () {
         before_label: 'ДО',
         after_label: 'ПОСЛЕ',
     });
+
+    $(".twentytwenty__container_vertical").twentytwenty({
+        orientation: 'vertical',
+        before_label: 'ДО',
+        after_label: 'ПОСЛЕ',
+        no_overlay: true,
+    });
 });
 
 

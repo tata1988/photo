@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/anima.css">
+<link rel="stylesheet" href="css/style.css">
 
     <title>Фотограф Ольга Костяника</title>
 </head>
 <body>
     <!-- Шапка -->
     <header class="header">
-        <h1 class="visually-hidden">Сайт-портфолио фотографа Ольги Костяники</h1>
         <div class="container">
              <!-- Меню -->
             <nav class="menu__desktop">
@@ -31,7 +31,6 @@
                     </div>
                     <ul class="menu">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="anima.html">О себе</a></li>
                         <li><a href="portfolio.html">Портфолио</a></li>
                         <li><a href="price.html">Прайс</a></li>
                         <li><a href="information.html">Информация</a></li>
@@ -105,10 +104,9 @@
                         
                 <ul class="menu">
                     <li class="menu__item"><a href="index.html">Главная</a></li>
-                    <li><a href="anima.html">О себе</a></li>
                     <li><a href="portfolio.html">Портфолио</a></li>
                     <li><a href="price.html">Прайс</a></li>
-                    <li><a href="information.html">Полезная информация</a></li>
+                    <li><a href="information.html">Информация</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
 
@@ -116,42 +114,80 @@
         </div>
     </header>
 
-	<div class="slider">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/child/child.jpg" alt="child"> 
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/landscape/ural-bali.jpg" alt="ural-bali">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
-                </div>
-                
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-	</div>
-
-    <!-- о себе -->
-    <section class="about">
+    <main class="main">
         <div class="container">
-            <h2 class="title">Фотограф Ольга Костяника</h2>
+            <div class="main__slider">
+                <div class="slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/child/child.jpg" alt="child"> 
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/landscape/ural-bali.jpg" alt="ural-bali">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main__slideshow">
+                <ul class="cb-slideshow">
+                    <li>
+                        <span>Image1</span>
+                    </li>
+                    <li>
+                        <span>Image2</span>
+                    </li>
+            
+                    <li>
+                        <span>Image3</span>
+                    </li>
+            
+                    <li>
+                        <span>Image4</span>
+                    </li>
+            
+                    <li>
+                        <span>Image5</span>
+                    </li>
+            
+                    <li>
+                        <span>Image6</span>
+                    </li>
+            
+                </ul>
+                <div class="main__button"><a href="price.html">Прайс</a></div> 
+            </div> 
+        </div>
+    </main>
+
+     <!-- о себе -->
+     <section class="about">
+        <div class="container">
+            <h1 class="title">Фотограф Ольга Костяника</h1>
             <div class="about__wrapper">
                 <div class="about__img col-3 col-lg-12 col-sm-12">
                     <img src="images/about.jpg" alt="about">
                 </div>
                 
                 <div class="about__text col-9 col-lg-12 col-sm-12">
+                    <h2 class="about__title">Обо мне</h2>
+                    <div class="about__subtitle">Меня зовут Ольга</div>
+                    <div class="divider"></div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ea accusamus voluptatem, minima dolor optio itaque repellat nostrum sed! Autem perspiciatis voluptatem saepe ratione exercitationem ipsa tempore ullam officiis at.</p>
                 </div>
                 
@@ -159,10 +195,38 @@
         </div>
     </section>
 
+    <section class="swiper-slider">
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/child/child.jpg" alt="child"> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/landscape/ural-bali.jpg" alt="ural-bali"> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/dark/2.jpg" alt="ural-bali"> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider/8.jpg" alt="ural-bali">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider/6.jpg" alt="ural-bali"> 
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
     <section class="twentytwenty">
         <div class="container">
             <h2 class="title">Пример обработки фото</h2>
-            <div id="box" class="twentytwenty__container" >
+            <div id="box" class="twentytwenty__container">
                 <img src="images/before.jpg" class="twentytwenty__img-before"/>
                 <img src="images/after.jpg" class="twentytwenty__img-after"/>
             </div>
@@ -172,7 +236,7 @@
     <!-- Форма обратной связи -->
 	<div class="feedback">
 		<div class="container">
-            <h2 class="title">Обратная связь</h2>
+            <h2 class="title">Контакты</h2>
             <div class="feedback__wrapper">
                 <div class="contacts">
                     <div class="contacts__phone">

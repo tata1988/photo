@@ -3,7 +3,7 @@
       --text-dark: #222;
       --text-light: #fff;
       --text-accent: #297d83;
-      --text-danger: #f00;
+      --text-danger: #2600ff;
       --bg: #e7a895;
   }
 
@@ -216,7 +216,7 @@
   }
 
   .contacts__phone a:hover {
-      color: var(--bg);
+      color: var(--text-danger);
       text-decoration: underline;
   }
 
@@ -231,10 +231,15 @@
   }
 
   .contacts__link:hover {
-      color: var(--bg);
+      color: var(--text-danger);
   }
 
   /* слайдер */
+
+  .main__slider {
+      display: block;
+  }
+
   .swiper {
       max-width: 900px;
       max-height: 600px;
@@ -271,10 +276,6 @@
       padding-top: 30px;
   }
 
-  .about-title {
-      display: none;
-  }
-
   .about__title {
       text-align: start;
       margin-bottom: 10px;
@@ -292,6 +293,12 @@
       gap: 20px;
   }
 
+  .about__img img {
+      display: block;
+      margin: 0 auto;
+  }
+
+
   .about__text {
       padding: 10px 15px;
       font-size: 20px;
@@ -302,6 +309,13 @@
       max-height: 500px;
   }
 
+  .before-after__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+  }
+
   .twentytwenty {
       padding: 10px 0;
   }
@@ -310,6 +324,12 @@
       margin: 0 auto;
       height: 500px;
       max-width: 750px;
+  }
+
+  .twentytwenty__container_vertical {
+      max-width: 333px;
+      height: 500px;
+      margin: 0 auto;
   }
 
 
@@ -363,50 +383,9 @@
 
   .feedback__btn:hover {
       translate: 0.3s;
-      color: var(--bg);
+      color: var(--text-danger);
       opacity: 0.7;
   }
-
-  /* Резюме*/
-  /*   .resume {
-      padding: 40px 0;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: var(--text-dark);
-  }
-
-  .resume-cards-inner {
-      align-items: stretch;
-      padding: 30px 0;
-  }
-
-  .resume-cards-inner img {
-      width: 100px;
-      height: auto;
-  }
-
-  .resume-card {
-      text-align: center;
-      padding: 15px;
-      margin-bottom: 30px;
-  }
-
-  .resume h2 {
-      text-transform: uppercase;
-  }
-
-  .resume-cards h3 {
-      text-transform: uppercase;
-      color: var(--text-dark);
-      font-size: 20px;
-      margin: 10px 0;
-  }
-
-  .resume-cards p {
-      line-height: 26px;
-  } */
 
   /* портфолио */
   .portfolio__wrapper {
@@ -448,6 +427,7 @@
   /* Анимация для портфолио */
 
   .hover-effect-btn {
+      min-height: 200px;
       position: relative;
       max-width: 900px;
       width: 100%;
@@ -459,7 +439,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.3);
       /* Настройка цвета и прозрачности для блока с заголовком */
       transition: background 0.5s ease;
   }
@@ -596,6 +576,8 @@
   .information {
       padding: 30px 15px;
   }
+
+
 
   .footer {
       padding: 30px 0;
@@ -768,13 +750,8 @@
           color: var(--text-accent);
       }
 
-      .about-title {
-          display: block;
-      }
-
-      .about__img img {
-          display: block;
-          margin: 0 auto;
+      .main__slider {
+          display: none;
       }
 
       .feedback__wrapper {
