@@ -119,10 +119,7 @@
 
     .main__button {
         display: block;
-        position: absolute;
-        width: 100%;
         bottom: 10%;
-
         /* Отступ сверху */
         text-align: center;
     }
@@ -132,7 +129,6 @@
         font-size: 20px;
         font-weight: 700;
         /* Отступ */
-        text-align: center;
         background-color: rgba(255, 255, 255, 0.2);
         /* Цвет кнопки */
         color: white;

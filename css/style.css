@@ -80,6 +80,19 @@
       background-color: var(--text-accent);
   }
 
+  /* стили для кнопки-ссылки  */
+  .button {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+  }
+
+  .button a {
+      text-align: center;
+      color: white;
+      z-index: 1;
+  }
+
   /* Сетка */
   .container {
       margin: 0 auto;
@@ -313,7 +326,6 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
-
   }
 
   .twentytwenty {
@@ -396,34 +408,6 @@
       gap: 20px;
   }
 
-  .portfolio__item {
-      max-width: 500px;
-  }
-
-  .portfolio__link {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-  }
-
-  .portfolio__link img:hover {
-      border: 2px solid #e7a895;
-      outline: 2px dashed #f5f1f0;
-      /* Ширина, вид и цвет рамки */
-      outline-offset: -10px;
-      /* Выводим рамку внутри элемента */
-      transition: 0.2s;
-  }
-
-  .portfolio__title {
-      text-align: center;
-      font-size: 18px;
-  }
-
-  .portfolio__price {
-      text-align: end;
-  }
-
   /* Анимация для портфолио */
 
   .hover-effect-btn {
@@ -473,21 +457,18 @@
       /* Отступ сверху при наведении */
   }
 
-  .button {
-      position: absolute;
-      width: 100%;
+  .portfolio__button {
       left: 0;
       top: 65%;
       /* Отступ сверху */
       text-align: center;
       opacity: 0;
       transition: opacity .35s ease;
+
   }
 
-  .button a {
-      padding: 15px 40px;
-      /* Отступ */
-      text-align: center;
+  .portfolio__button a {
+      padding: 15px 30px;
       background: #e59191;
       /* Цвет кнопки */
       color: white;
@@ -496,6 +477,7 @@
       /* Ширина, стиль и цвет границы */
       z-index: 1;
   }
+
 
   .hover-effect-btn:hover .button {
       opacity: 1;
@@ -754,6 +736,10 @@
           display: none;
       }
 
+      .feedback {
+          padding: 15px 10px;
+      }
+
       .feedback__wrapper {
           padding: 10px 0 20px 0;
       }
@@ -763,7 +749,35 @@
       }
 
       .swiper-slider {
-          display: block;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-bottom: 20px;
+
+      }
+
+      .swiper-slider__btn {
+          margin: 0 auto;
+      }
+
+      .swiper-slider__btn a {
+          padding: 10px 15px;
+          font-size: 20px;
+          font-weight: 700;
+          /* Отступ */
+          background-color: rgba(255, 255, 255, 0.2);
+          /* Цвет кнопки */
+          color: white;
+          /* Цвет текста */
+          border: 1px solid white;
+          /* Ширина, стиль и цвет границы */
+          z-index: 1;
+          opacity: 0.8;
+          transition: opacity .3s ease;
+      }
+
+      .swiper-slider__btn a:hover {
+          background-color: var(--bg)
       }
 
       .price {
@@ -813,7 +827,7 @@
       }
 
       .feedback {
-          padding: 30px 10px;
+          padding: 20px 10px;
           height: calc(100vh - 75px);
       }
 
