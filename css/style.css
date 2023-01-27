@@ -4,7 +4,7 @@
       --text-light: #fff;
       --text-accent: #fff;
       --text-danger: #2600ff;
-      --bg: #b9b8b8;
+      --bg: #d4d4d4;
   }
 
   /* Общие */
@@ -22,7 +22,7 @@
   body {
       margin: 0;
       font-family: sans-serif;
-      background-color: #b9b8b8;
+      background-color: var(--bg);
   }
 
   input,
