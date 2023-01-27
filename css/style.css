@@ -2,9 +2,9 @@
   :root {
       --text-dark: #222;
       --text-light: #fff;
-      --text-accent: #297d83;
+      --text-accent: #fff;
       --text-danger: #2600ff;
-      --bg: #e7a895;
+      --bg: #b9b8b8;
   }
 
   /* Общие */
@@ -22,7 +22,10 @@
   body {
       margin: 0;
       font-family: sans-serif;
-      background-color: #e7a895;
+      background-color: #b9b8b8;
+      background: -webkit-linear-gradient(to bottom, #b9b8b8 7%, #403f3f 100%);
+      background: -moz-linear-gradient(to bottom, #b9b8b8 7%, #403f3f 100%);
+      background: linear-gradient(to bottom, #b9b8b8 7%, #403f3f 100%);
   }
 
   input,
@@ -469,7 +472,7 @@
 
   .portfolio__button a {
       padding: 15px 30px;
-      background: #e59191;
+      background-color: var(--bg);
       /* Цвет кнопки */
       color: white;
       /* Цвет текста */
