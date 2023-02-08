@@ -859,6 +859,11 @@
           font-size: 18px;
       }
 
+      .logo {
+          width: 170px;
+          height: 106px;
+      }
+
       .about {
           padding-top: 15px;
       }
