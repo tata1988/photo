@@ -74,7 +74,7 @@
   }
 
   .divider {
-      margin: 10px 0;
+      margin: 15px 0;
       width: 60px;
       height: 3px;
       background-color: var(--text-accent);
@@ -134,7 +134,7 @@
   }
 
   .logo {
-      width: 230px;
+      width: 233px;
       height: 150px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 
@@ -292,8 +292,8 @@
 
   .about__title {
       text-align: start;
-      margin-bottom: 10px;
-      font-size: 24px;
+      margin-bottom: 15px;
+      font-size: 32px;
       color: var(--text-accent);
   }
 
@@ -312,7 +312,6 @@
       margin: 0 auto;
   }
 
-
   .about__text {
       padding: 10px 15px;
       font-size: 20px;
@@ -321,6 +320,12 @@
 
   .about__img {
       max-height: 500px;
+  }
+
+  .about__descr {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
   }
 
   .before-after__wrapper {
