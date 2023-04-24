@@ -1,3 +1,26 @@
+const btnAnimals = document.querySelector('#btnAnimals');
+const photoAnimals = document.querySelector('#photoAnimals');
+
+const btnClick = (gallery) => {
+    if (gallery.classList.contains('hide')) {
+        gallery.classList.remove('hide');
+        gallery.classList.add('show');
+    } else {
+        gallery.classList.remove('show');
+        gallery.classList.add('hide');
+    }
+}
+
+btnAnimals.addEventListener('click', () => {
+    if (photoAnimals.classList.contains('hide')) {
+        photoAnimals.classList.remove('hide');
+        photoAnimals.classList.add('show');
+    } else {
+        photoAnimals.classList.remove('show');
+        photoAnimals.classList.add('hide');
+    }
+});
+
 // смена цвета header при прокрутке
 /* $(window).on("scroll", function () {
     $('.header').toggleClass("header__active", $(this).scrollTop() > $(window).height());

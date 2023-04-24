@@ -606,10 +606,16 @@
       padding: 30px 15px;
   }
 
-
-
   .footer {
       padding: 30px 0;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: grid;
   }
 
   /* Адаптивная версия */
