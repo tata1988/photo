@@ -902,7 +902,7 @@
           margin: 0 auto;
       }
 
-      .swiper-slider__btn {
+      .swiper-slider__btn a {
           padding: 10px 15px;
           font-size: 20px;
           font-weight: 700;
@@ -1040,6 +1040,6 @@
 
       .btn {
           font-size: 14px;
-          padding: 5px 10px;
+          padding: 10px 10px;
       }
   }
