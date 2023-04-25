@@ -73,6 +73,14 @@
       margin-bottom: 15px;
   }
 
+  .title_mb {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    min-width: 700px;
+  }
+
+
   .divider {
       margin: 15px 0;
       width: 60px;
@@ -93,6 +101,30 @@
       z-index: 1;
   }
 
+  /* стили для прозрачной кнопки */
+
+  .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 20px;
+      font-weight: 700;
+      /* Отступ */
+      background-color: rgba(255, 255, 255, 0.2);
+      /* Цвет кнопки */
+      color: white;
+      /* Цвет текста */
+      border: 1px solid white;
+      /* Ширина, стиль и цвет границы */
+      z-index: 1;
+      opacity: 0.8;
+      transition: opacity .3s ease;
+  }
+
+  .btn:hover {
+      background-color: var(--bg)
+  }
+
+
   /* Сетка */
   .container {
       margin: 0 auto;
@@ -107,6 +139,7 @@
       align-items: center;
       justify-content: space-between;
   }
+
 
   .col-3 {
       width: 25%;
@@ -497,6 +530,15 @@
       padding: 40px 0;
   }
 
+  .inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+  }
+
   /* 
   .list .gallery {
 
@@ -611,11 +653,11 @@
   }
 
   .hide {
-    display: none;
+      display: none;
   }
 
   .show {
-    display: grid;
+      display: grid;
   }
 
   /* Адаптивная версия */
@@ -830,7 +872,7 @@
           margin: 0 auto;
       }
 
-      .swiper-slider__btn a {
+      .swiper-slider__btn {
           padding: 10px 15px;
           font-size: 20px;
           font-weight: 700;

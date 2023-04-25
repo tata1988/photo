@@ -1,26 +1,3 @@
-const btnAnimals = document.querySelector('#btnAnimals');
-const photoAnimals = document.querySelector('#photoAnimals');
-
-const btnClick = (gallery) => {
-    if (gallery.classList.contains('hide')) {
-        gallery.classList.remove('hide');
-        gallery.classList.add('show');
-    } else {
-        gallery.classList.remove('show');
-        gallery.classList.add('hide');
-    }
-}
-
-btnAnimals.addEventListener('click', () => {
-    if (photoAnimals.classList.contains('hide')) {
-        photoAnimals.classList.remove('hide');
-        photoAnimals.classList.add('show');
-    } else {
-        photoAnimals.classList.remove('show');
-        photoAnimals.classList.add('hide');
-    }
-});
-
 // смена цвета header при прокрутке
 /* $(window).on("scroll", function () {
     $('.header').toggleClass("header__active", $(this).scrollTop() > $(window).height());
@@ -80,6 +57,52 @@ let swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+const wrapper = document.querySelector('.wrapper-list');
+
+
+/* 
+const btnClick = (gallery) => {
+    if (gallery.classList.contains('hide')) {
+        gallery.classList.remove('hide');
+        gallery.classList.add('show');
+    } else {
+        gallery.classList.remove('show');
+        gallery.classList.add('hide');
+    }
+} */
+
+/* btnAnimals.addEventListener('click', (e) => {
+    if (photoAnimals.classList.contains('hide')) {
+        photoAnimals.classList.remove('hide');
+        photoAnimals.classList.add('show');
+        e.target.textContent = 'Скрыть';
+        console.log(e.target.id);
+    } else {
+        photoAnimals.classList.remove('show');
+        photoAnimals.classList.add('hide');
+        e.target.textContent = 'Смотреть';
+    }
+}); */
+
+wrapper.addEventListener('click', (e) => {
+    const target = e.target;
+
+    if (target.closest('.list')) {
+        const gallery = target.closest('.list').querySelector('.gallery');
+
+        if (gallery.classList.contains('hide')) {
+            gallery.classList.remove('hide');
+            gallery.classList.add('show');
+            target.textContent = 'Скрыть';
+        } else {
+            gallery.classList.remove('show');
+            gallery.classList.add('hide');
+            target.textContent = 'Смотреть';
+        }
+
+    }
+})
+
 
 
 
