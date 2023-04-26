@@ -60,6 +60,7 @@
   h3,
   p {
       margin: 0;
+      padding: 0;
   }
 
   .visually-hidden {
@@ -620,28 +621,29 @@
   }
 
   .price__wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-  }
 
-  .price__item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: start;
-  }
-
-  .price__title {
-      margin: 10px 0;
+      padding: 20px;
+      font-size: 24px;
+      line-height: 36px;
   }
 
   .price__text {
-      font-size: 16px;
+      margin-top: 20px;
   }
 
-  .price__img {
-      max-height: 300px;
+  .price__list {
+      margin-top: 20px;
+  }
+
+  .price__item {
+      position: relative;
+      padding-left: 35px;
+  }
+
+  .price__item::before {
+      position: absolute;
+      left: 5px;
+      content: '\2713';
   }
 
   .information {
@@ -708,11 +710,6 @@
       .inner {
           gap: 20px;
           margin: 0 auto 20px auto;
-      }
-
-      .list__title {
-          font-size: 26px;
-          min-width: 600px;
       }
 
       .btn {
@@ -926,6 +923,11 @@
           padding: 20px 15px;
       }
 
+      .price__wrapper {
+          font-size: 20px;
+          line-height: 30px;
+      }
+
       .grid {
           grid-auto-rows: 250px;
       }
@@ -938,11 +940,6 @@
           max-width: 600px;
           gap: 10px;
           margin: 0 auto 10px auto;
-      }
-
-      .list__title {
-          font-size: 20px;
-          min-width: 500px;
       }
 
       .btn {
@@ -1042,4 +1039,31 @@
           font-size: 14px;
           padding: 10px 10px;
       }
+
+ 
+    .price__wrapper {
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+  
+    .price__text {
+        margin-top: 10px;
+    }
+  
+    .price__list {
+        margin-top: 10px;
+    }
+  
+    .price__item {
+        position: relative;
+        padding-left: 25px;
+    }
+  
+    .price__item::before {
+        position: absolute;
+        left: 5px;
+        top: 1px;
+        content: '\2713';
+    }
   }
