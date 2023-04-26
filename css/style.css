@@ -540,6 +540,16 @@
       min-width: 700px;
   }
 
+  /* классы показать и скрыть для list */
+
+  .hide {
+      display: none;
+  }
+
+  .show {
+      display: grid;
+  }
+
   /* 
   .list .gallery {
 
@@ -646,21 +656,70 @@
       content: '\2713';
   }
 
-  .information {
-      padding: 30px 15px;
+  /* информация */
+
+  .info {
+      padding: 0 15px 30px 15px;
   }
 
-  .footer {
+  .info__wrapper {
+      font-size: 24px;
+      line-height: 36px;
+  }
+
+  .info__title {
+      text-align: center;
+      font-size: 32px;
       padding: 30px 0;
   }
 
-  .hide {
-      display: none;
+  .info__block {
+      padding: 15px;
+      max-width: 600px;
+      margin: 0 auto;
   }
 
-  .show {
-      display: grid;
+  .info__img {
+      display: block;
+      margin: 0 auto;
   }
+
+  .info__img_size {
+    max-height: 500px;
+  }
+
+  .info__comment {
+      font-size: 18px;
+      padding: 10px 0;
+      text-align: center;
+      max-height: ;
+  }
+  
+
+  .info__text {
+      text-indent: 2em;
+  }
+
+  .info__row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+  }
+
+  .info__item {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .info__item::before {
+    content: '\25B8';
+    position: absolute;
+    left: 0;
+    top: 3px;
+
+  }
+
 
   /* Адаптивная версия */
   @media screen and (max-width: 1200px) {
@@ -1040,30 +1099,30 @@
           padding: 10px 10px;
       }
 
- 
-    .price__wrapper {
-        padding: 0;
-        font-size: 16px;
-        line-height: 28px;
-    }
-  
-    .price__text {
-        margin-top: 5px;
-    }
-  
-    .price__list {
-        margin-top: 5px;
-    }
-  
-    .price__item {
-        position: relative;
-        padding-left: 25px;
-    }
-  
-    .price__item::before {
-        position: absolute;
-        left: 5px;
-        top: 1px;
-        content: '\2713';
-    }
+
+      .price__wrapper {
+          padding: 0;
+          font-size: 16px;
+          line-height: 28px;
+      }
+
+      .price__text {
+          margin-top: 5px;
+      }
+
+      .price__list {
+          margin-top: 5px;
+      }
+
+      .price__item {
+          position: relative;
+          padding-left: 25px;
+      }
+
+      .price__item::before {
+          position: absolute;
+          left: 5px;
+          top: 1px;
+          content: '\2713';
+      }
   }
