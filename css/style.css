@@ -1146,15 +1146,7 @@
       }
 
       .price__item {
-          position: relative;
           padding-left: 25px;
-      }
-
-      .price__item::before {
-          position: absolute;
-          left: 5px;
-          top: 1px;
-          content: '\2713';
       }
 
       .info__wrapper {
