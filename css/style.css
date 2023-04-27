@@ -540,15 +540,6 @@
       min-width: 700px;
   }
 
-  /* классы показать и скрыть для list */
-
-  .hide {
-      display: none;
-  }
-
-  .show {
-      display: grid;
-  }
 
   /* 
   .list .gallery {
@@ -622,6 +613,16 @@
   .hover-image-scale img:hover {
       transform: scale(1.1);
       /* Увеличиваем масштаб */
+  }
+
+  /* классы показать и скрыть для list */
+
+  .hide {
+      display: none;
+  }
+
+  .show {
+      display: grid;
   }
 
   /* Прайс */
@@ -1172,7 +1173,7 @@
       }
 
       .info__text {
-        text-indent: 1em;
+          text-indent: 1em;
       }
 
       .info__row {
