@@ -353,6 +353,10 @@
       font-weight: 400;
   }
 
+  .about__icon {
+      margin-right: 5px;
+  }
+
   .before-after__wrapper {
       display: flex;
       flex-direction: column;
@@ -1078,7 +1082,7 @@
       }
 
       .about__descr {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 24px;
       }
 
